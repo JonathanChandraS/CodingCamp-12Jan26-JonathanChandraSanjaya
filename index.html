@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revou Project - Modern Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">RevouXJonathan</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Our Profile</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi <span id="user-name">Guest</span>, Welcome to Future</h1>
+            <p>We build innovative digital solutions that transform businesses and elevate user experiences.</p>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section">
+        <h2 class="section-title">Our Profile</h2>
+
+        <img src="assets/profile.png" alt="Our Team" class="profile-banner">
+
+        <div class="about-grid">
+            <div class="about-company">
+                <h3>About Our Company</h3>
+                <p>
+                    Established in 2024, RevouProject has quickly grown into a leading provider of digital
+                    transformation services.
+                    We believe in the power of technology to bridge gaps and create meaningful connections. Our team of
+                    experts
+                    is dedicated to delivering high-quality, scalable, and user-centric solutions.
+                </p>
+                <br>
+                <p>
+                    We value transparency, creativity, and integrity in everything we do. Whether you are a startup
+                    looking to
+                    make your mark or an established enterprise seeking to innovate, we are your trusted partner in the
+                    digital journey.
+                </p>
+            </div>
+
+            <div class="vision-mission">
+                <div class="card" style="margin-bottom: 2rem;">
+                    <h3>Our Vision</h3>
+                    <p>To be the catalyst for global digital innovation, empowering every organization to achieve its
+                        full potential through cutting-edge technology.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <ul>
+                        <li>Deliver exceptional quality in every line of code.</li>
+                        <li>Foster a culture of continuous learning and growth.</li>
+                        <li>Build sustainable and scalable solutions for our clients.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Us Section -->
+    <section id="message-us" class="message-us">
+        <h2 class="section-title">Message Us</h2>
+
+        <div class="form-container">
+            <form id="message-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <div id="name-error" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob">
+                    <div id="dob-error" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender">
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div id="gender-error" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                    <div id="message-error" class="error-message"></div>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="feedback-display" class="feedback-display">
+                <h3>Message Received!</h3>
+                <div id="feedback-content"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Bootcamp Revou X Jonathan. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
